@@ -25,12 +25,12 @@
 </head>
 <body>
 <nav>
-  <a class="nav-logo" href="index.html" aria-label="The Water Traveler home"><span class="nav-logo-img"><img src="images/logos/logo_white.svg" alt=""></span><span class="nav-logo-text">The Water Traveler</span></a>
+  <a class="nav-logo" href="index.html" aria-label="The Water Traveler home"><span class="nav-logo-img"><img src="images/favicon.avif" alt=""></span><span class="nav-logo-text">The Water Traveler</span></a>
   <div class="nav-right">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="key-west.html" class="active">Key West</a><div class="dropdown"><a href="yacht-just-chillin.html">Yacht Just Chillin'</a><a href="in-stay-rentals.html">In-Stay Rentals &amp; Services</a></div></li>
-      <li><a href="lake-tahoe.html">Lake Tahoe</a><div class="dropdown"><a href="gallery.html?set=tahoe-heavenly">Heavenly Mountain Terrace</a><a href="gallery.html?set=tahoe-pebble">Pebble Beach Tahome</a><a href="winter-excursions.html">Winter Excursions &amp; Add-Ons</a></div></li>
+      <li><a href="lake-tahoe.html">Lake Tahoe</a><div class="dropdown"><a href="gallery.html?set=tahoe-heavenly">Heavenly Mountain Terrace</a><a href="gallery.html?set=tahoe-pebble">Pebble Beach Tahome</a><a href="gallery.html?set=tahoe-cobalt-246">Cobalt 246 Boat Charter</a><a href="winter-excursions.html">Winter Excursions &amp; Add-Ons</a></div></li>
       <li><a href="san-francisco.html">San Francisco</a><div class="dropdown"><a href="gallery.html?set=sf-electra">Electra</a><a href="gallery.html?set=sf-just-dreaming">Just Dreaming</a><a href="gallery.html?set=sf-bayliner">Bayliner</a></div></li>
       <li><a href="our-crew.html">Our Crew</a></li>
         <li><a href="waiver.html">Waiver</a></li>
@@ -43,7 +43,7 @@
   <a href="index.html">Home</a><a href="key-west.html">Key West</a>
   <a class="mob-sub" href="yacht-just-chillin.html">↳ Yacht Just Chillin'</a>
   <a class="mob-sub" href="in-stay-rentals.html">↳ In-Stay Rentals &amp; Services</a>
-  <a href="lake-tahoe.html">Lake Tahoe</a><a class="mob-sub" href="gallery.html?set=tahoe-heavenly">↳ Heavenly Mountain Terrace</a><a class="mob-sub" href="gallery.html?set=tahoe-pebble">↳ Pebble Beach Tahome</a><a class="mob-sub" href="winter-excursions.html">↳ Winter Excursions &amp; Add-Ons</a>
+  <a href="lake-tahoe.html">Lake Tahoe</a><a class="mob-sub" href="gallery.html?set=tahoe-heavenly">↳ Heavenly Mountain Terrace</a><a class="mob-sub" href="gallery.html?set=tahoe-pebble">↳ Pebble Beach Tahome</a><a class="mob-sub" href="gallery.html?set=tahoe-cobalt-246">↳ Cobalt 246 Boat Charter</a><a class="mob-sub" href="winter-excursions.html">↳ Winter Excursions &amp; Add-Ons</a>
   <a href="san-francisco.html">San Francisco</a><a class="mob-sub" href="gallery.html?set=sf-electra">↳ Electra</a><a class="mob-sub" href="gallery.html?set=sf-just-dreaming">↳ Just Dreaming</a><a class="mob-sub" href="gallery.html?set=sf-bayliner">↳ Bayliner</a><a href="our-crew.html">Our Crew</a><a href="contact.html">Contact</a>
 </div>
 
@@ -72,6 +72,13 @@
   </div>
 </section>
 
+<section class="px py bg-white">
+  <div class="tag">Gallery</div>
+  <h2 class="title">Yacht Just Chillin' <em>Photos</em></h2>
+  <p class="body-text" id="yachtGalleryCount"></p>
+  <div class="gallery-page-grid" id="yachtGalleryGrid"></div>
+</section>
+
 <section class="px py-sm bg-sand">
   <div class="tag">Amenities</div>
   <h2 class="title">What's <em>Included</em></h2>
@@ -98,4 +105,96 @@
   <div class="footer-bottom"><p>© 2022 The Water Traveler Company · <a href="mailto:ali@thewatertraveler.com" style="color:rgba(255,255,255,.35);text-decoration:none;">ali@thewatertraveler.com</a></p><div class="footer-phone">305.209.8348</div></div>
 </footer>
 <script src="js/main.js"></script>
+<script>
+(() => {
+  const images = [
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.26.43 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.26.56 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.27.05 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.27.17 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.27.39 PM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.28.09 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.28.32 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.28.53 PM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.29.06 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.29.17 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.29.31 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.29.47 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.30.48 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.30.58 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.31.30 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.31.50 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-04 at 5.32.54 PM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-26 at 9.37.37 AM.jpg",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-26 at 9.41.09 AM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-26 at 9.44.54 AM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-26 at 9.46.28 AM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-03-26 at 9.58.23 AM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-04-11 at 1.35.35 PM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-04-11 at 1.35.56 PM.png",
+    "images/Key West Yacht - Just Chillin/Screenshot 2025-04-11 at 1.36.08 PM.png",
+    "images/Key West Yacht - Just Chillin/shutterstock_1273524925.jpg",
+    "images/Key West Yacht - Just Chillin/shutterstock_134266958.jpg",
+    "images/Key West Yacht - Just Chillin/shutterstock_153029399.jpg",
+    "images/Key West Yacht - Just Chillin/shutterstock_1724158969.jpg",
+    "images/Key West Yacht - Just Chillin/shutterstock_183908402.jpg"
+  ];
+
+  const grid = document.getElementById('yachtGalleryGrid');
+  const count = document.getElementById('yachtGalleryCount');
+  if (!grid) return;
+  if (count) count.textContent = images.length + ' photos';
+
+  const lightbox = document.createElement('div');
+  lightbox.className = 'gallery-lightbox';
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightbox.innerHTML = '<div class="gallery-lightbox-inner"><button class="gallery-lightbox-close" type="button" aria-label="Close image">&times;</button><img alt=""></div>';
+  document.body.appendChild(lightbox);
+
+  const lightboxImg = lightbox.querySelector('img');
+  const closeButton = lightbox.querySelector('.gallery-lightbox-close');
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lightbox-open');
+    lightboxImg.removeAttribute('src');
+  }
+
+  const fragment = document.createDocumentFragment();
+  images.forEach((src, index) => {
+    const link = document.createElement('a');
+    const img = document.createElement('img');
+    const alt = "Yacht Just Chillin' photo " + (index + 1);
+    link.href = src;
+    link.setAttribute('aria-label', 'Open ' + alt);
+    img.src = src;
+    img.alt = alt;
+    img.loading = 'lazy';
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      openLightbox(src, alt);
+    });
+    link.appendChild(img);
+    fragment.appendChild(link);
+  });
+  grid.appendChild(fragment);
+
+  closeButton.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', event => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+})();
+</script>
 </body></html>

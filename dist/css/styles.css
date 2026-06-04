@@ -406,6 +406,16 @@ h2.title-w em { font-style: italic; color: var(--gold2); }
   display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 10px; margin-top: clamp(32px, 4vw, 52px);
 }
+.gallery-description {
+  max-width: 920px; margin-top: 24px; display: grid; gap: 18px;
+}
+.gallery-description h3 {
+  font-family: 'Cormorant Garamond', serif; font-size: clamp(1.65rem, 3vw, 2.35rem);
+  font-weight: 300; color: var(--navy); margin-top: 10px;
+}
+.gallery-description p {
+  font-size: .95rem; line-height: 1.75; color: var(--tm);
+}
 .gallery-page-grid a {
   display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--navy2);
   border: 1px solid var(--bdr);
@@ -649,7 +659,7 @@ footer {
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: clamp(28px, 4vw, 52px); margin-bottom: 48px; }
 .footer-brand h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: #fff; margin-bottom: 12px; }
 .footer-brand p { font-size: .83rem; line-height: 1.7; color: rgba(255,255,255,.44); margin-bottom: 18px; }
-.footer-logo { width: 36px; height: 36px; object-fit: contain; display: block; margin-bottom: 14px; }
+.footer-logo { width: 108px; height: 108px; object-fit: contain; display: block; margin-bottom: 14px; }
 .footer-social { display: flex; gap: 10px; }
 .footer-social a { width: 32px; height: 32px; border: 1px solid rgba(255,255,255,.14); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.44); text-decoration: none; font-size: .78rem; transition: all .2s; }
 .footer-social img { width: 15px; height: 15px; display: block; filter: brightness(0) invert(1); opacity: .58; transition: opacity .2s; }
